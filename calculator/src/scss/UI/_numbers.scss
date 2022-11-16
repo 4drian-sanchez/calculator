@@ -1,0 +1,168 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.keyPad {
+    @include m.grid(4, 1.5rem);
+    margin-top: 2.5rem;
+    background-color: v.$darkKeypad;
+    padding: 2.5rem;
+    border-radius: 1rem;
+}
+
+.keyPad__numbers, .reset,
+.delete, .result,
+.btn-operator
+{
+    height: 6.3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    background-color: v.$lightKey;
+    box-shadow: 0px 3px 0px 0px v.$lightKeyShadow;
+    color: v.$darkText;
+    transition: 100ms ease-in-out background-color;
+    cursor: pointer;
+
+    &:active {
+        background-color: v.$white;
+        box-shadow: 0px 2px 0px 0px v.$lightKeyShadow;
+    }
+}
+
+.delete,
+.reset {
+    font-size: 1.8rem;
+    background-color: v.$darkKeyBlue;
+    color: v.$white;
+    box-shadow: 0px 3px 0px 0px v.$darkKeyBlueShadow;
+
+    &:active {
+        background-color: hsl(225, 29%, 58%);
+        box-shadow: 0px 2px 0px 0px v.$darkKeyBlueShadow;
+    }
+
+
+    
+    &.lightThemeDelReset {
+        background-color: v.$DarkModerate;
+        box-shadow: 0px 3px 0px 0px v.$DarkModerateShadow;
+
+        &:active {
+            background-color: hsl(185, 41%, 44%);
+            box-shadow: 0px 2px 0px 0px v.$darkKeyBlueShadow;
+        }
+    }
+
+    &.violetThemeDelReset {
+        background-color: v.$violetKeyDelReset;
+        box-shadow: 0px 3px 0px 0px v.$violetKeyDelResetShadow;
+        color: v.$white;
+        
+        &:active {
+            background-color: hsl(281, 72%, 35%);
+            box-shadow: 0px 2px 0px 0px v.$violetKeyDelResetShadow;
+        }
+    }
+
+}
+
+.reset {
+    grid-column: 1 / 3;
+}
+
+.result {
+    grid-column: 3 / 5;
+    background-color: v.$redKey;
+    color: v.$white;
+    box-shadow: 0px 3px 0px 0px v.$redKeyShadow;
+
+    &:active {
+        background-color: hsl(6, 79%, 57%);
+        box-shadow: 0px 2px 0px 0px v.$redKeyShadow;
+    }
+}
+
+    /***** THEMES *****/
+
+/* KeyPad*/
+.darkTheme--keyPad { background-color: v.$darkKeypad; }
+.lightTheme--keyPad { background-color: v.$lightKeypad; }
+.violetTheme--keyPad { background-color: v.$violetScreen; }
+
+
+/* Numbers */
+.DarkTheme--number {
+    background-color: v.$lightKey;
+    box-shadow: 0px 3px 0px 0px v.$lightKeyShadow;
+
+    &:active {
+        background-color: v.$white;
+        box-shadow: 0px 2px 0px 0px v.$lightKeyShadow;
+    }
+}
+
+.lightTheme--number {
+    background-color: v.$lightKey2;
+    box-shadow: 0px 3px 0px 0px v.$ligtKeyShadow2;
+
+    &:active {
+        background-color: v.$white;
+        box-shadow: 0px 2px 0px 0px v.$ligtKeyShadow2;
+    }
+}
+
+.violetTheme--number {
+    background-color: v.$violetKey;
+    box-shadow: 0px 3px 0px 0px v.$violetKeyShadow;
+    color: v.$lightYellow;
+
+    &:active {
+        background-color: hsl(268, 43%, 30%);
+        box-shadow: 0px 2px 0px 0px v.$violetKeyShadow;
+    }
+}
+
+
+/* result */
+.darkTheme--result {
+    background-color: v.$redKey;
+    box-shadow: 0px 3px 0px 0px v.$redKeyShadow;
+
+    &:active {
+        background-color: hsl(6, 79%, 57%);
+        box-shadow: 0px 2px 0px 0px v.$redKeyShadow;
+    }
+}
+
+.lightTheme--result {
+    background-color: v.$orangeKey;
+    box-shadow: 0px 3px 0px 0px v.$orangeKeyShadow;
+
+    &:active {
+        background-color: hsl(25, 94%, 45%);
+        box-shadow: 0px 2px 0px 0px v.$orangeKeyShadow;
+    }
+}
+
+.violetTheme--result {
+    background-color: v.$violetResult;
+    box-shadow: 0px 3px 0px 0px v.$violetResultShadow;
+    color: v.$darkBlue;
+
+    &:active {
+        background-color: hsl(176, 100%, 56%);
+        box-shadow: 0px 2px 0px 0px v.$violetResultShadow;
+    }
+}
+
+/* Delete and reset */
+
+.darkThemeDelReset {
+    background-color: v.$darkKeyBlue;
+    box-shadow: 0px 3px 0px 0px v.$darkKeyBlueShadow;
+
+    &:active {
+        background-color: hsl(225, 29%, 58%);
+        box-shadow: 0px 2px 0px 0px v.$darkKeyBlueShadow;
+    }
+}

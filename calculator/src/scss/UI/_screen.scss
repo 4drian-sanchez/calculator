@@ -1,0 +1,49 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.screen {
+    margin-top: 3rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: v.$darkScreen;
+    color: v.$white;
+    border-radius: 1rem;
+    text-align: right;
+    line-height: 1;
+    height: 8rem;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    &__valorActual {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin: .5rem .5rem 1rem;
+    }
+    
+    &.darkTheme--screen {
+        background-color: v.$darkScreen;
+    }
+
+    &.lightTheme--screen {
+        background-color: v.$lightScreen;
+    }
+
+    &.viotelTheme--screen {
+        background-color: v.$violetScreen;
+    }
+
+    &.theme1--color {
+        color: v.$white;
+    }
+
+    &.theme2--color {
+        color: v.$lightText;
+    }
+
+    &.theme3--color {
+        color: v.$lightYellow;
+    }
+}

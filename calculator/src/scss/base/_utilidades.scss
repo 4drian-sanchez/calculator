@@ -1,0 +1,19 @@
+@use 'mixins' as m;
+
+
+.text-center {
+    text-align: center;
+}
+
+[class$="contenedor"] {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.mt-10 {
+    margin-top: 10rem;
+    @include m.tablet {
+        margin-top: 0;
+    }
+}

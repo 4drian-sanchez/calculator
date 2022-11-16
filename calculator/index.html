@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./build/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <main class="calculator">
+
+      <div class="calculator__container">
+        <div class="calculator__header">
+          <h1 class="calculator__heading">calc</h1>
+          
+          <div class="themes">
+            <p class="themes__label">theme</p>
+
+            <div class="themes__container">
+              <p class="themes__numbers">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+              </p>
+
+              <!-- SLIDE -->
+              <input 
+              class="slide"
+              type="range"
+              value="1"
+              min="1"
+              max="3"
+              step="1">
+
+            </div>
+
+          </div>
+        </div>
+        
+        <!-- Calc -->
+        <form>
+
+          <div class="screen">
+            <div class="screen__valorActual"></div>
+              <div class="screen__valorAnterior"></div>
+          </div>
+
+          <fieldset class="keyPad">
+
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="7"
+              >
+
+              <input 
+              class="keyPad__numbers"
+              type="button" 
+              value="8"
+              >
+
+              <input
+              class="keyPad__numbers"
+              type="button" 
+              value="9"
+              >
+
+              <!-- Borrar -->
+              <input 
+              class=" delete btn-operator"
+              type="button"
+              value="DEL"
+              name="borrar"
+              >
+              
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="4"
+              >
+
+              <input
+              class="keyPad__numbers"
+              type="button"
+              value="5"
+              >
+
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="6"
+              >
+
+              <!-- Sumar -->
+              <input 
+              class="sumar btn-operator"
+              type="button"
+              value="+"
+              name="sumar"
+              >
+
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="1"
+              >
+
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="2"
+              >
+
+              <input 
+              class="keyPad__numbers"
+              type="button"
+              value="3">
+
+              <!-- Restar -->
+              <input 
+              class="btn-operator" 
+              type="button" 
+              value="-"
+              name="restar"
+              >
+
+              <!-- Decimal -->
+              <input 
+              class= "decimal btn-operator" 
+              type= "button" 
+              value= "."
+              name= "decimal"
+              >
+
+              <input 
+              class="keyPad__numbers" 
+              type="button" 
+              value="0"
+              >
+
+              <!-- Dividir -->
+              <input 
+              class="btn-operator" 
+              type="button" 
+              value="/"
+              name="dividir"
+              >
+
+              <!-- Multiplicar -->
+              <input 
+              class="btn-operator" 
+              type="button" 
+              value="x"
+              name="multiplicar"
+              >
+
+              <!-- RESET -->
+              <input 
+              class="reset btn-operator" 
+              type="button" 
+              value="RESET"
+              name="reset"
+              >
+
+              <!-- Igual -->
+              <input 
+              class="result btn-operator"
+              type="button" 
+              value="="
+              name="igual"
+              >
+
+          </fieldset>
+        </form>
+    </div>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+  
+</body>
+</html>

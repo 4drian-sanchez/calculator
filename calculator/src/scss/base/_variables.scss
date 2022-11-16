@@ -1,0 +1,57 @@
+$telefono: 375px;
+$tablet: 768px;
+$desktop: 1440px;
+
+$font: 'Roboto', sans-serif;
+
+/* THEME 1 */
+$darkMain: hsl(222, 26%, 31%);
+$darkScreen: hsl(224, 36%, 15%);
+$darkKeypad: hsl(223, 31%, 20%);
+$darkKeyBlue: hsl(225, 21%, 49%);
+$darkKeyBlueShadow: hsl(224, 28%, 35%);
+
+$redKey: hsl(6, 63%, 50%);
+$redKeyShadow: hsl(6, 70%, 34%);
+$lightKey: hsl(30, 25%, 89%);
+$lightKeyShadow: hsl(28, 16%, 65%);
+
+
+/* TEXT 1*/
+$darkText: hsl(221, 14%, 31%);
+$white: hsl(0, 0%, 100%);
+
+
+/* THEME 2 */
+$lightMain: hsl(0, 0%, 90%);
+$lightScreen: hsl(0, 0%, 93%);
+$lightKeypad: hsl(0, 5%, 81%);
+
+$lightKey2: hsl(45, 7%, 89%);
+$ligtKeyShadow2: hsl(35, 11%, 61%);
+
+$orangeKey: hsl(25, 98%, 40%);
+$orangeKeyShadow: hsl(25, 99%, 27%);
+
+$DarkModerate: hsl(185, 42%, 37%);
+$DarkModerateShadow: hsl(185, 58%, 25%);
+
+/* text 2*/
+$lightText: hsl(60, 10%, 19%);
+
+/* THEME 3 */
+$violetMain: hsl(268, 75%, 9%);
+$violetScreen: hsl(268, 71%, 12%);
+
+$violetKey: hsl(268, 47%, 21%);
+$violetKeyShadow: hsl(290, 70%, 36%);
+
+$violetKeyDelReset: hsl(281, 89%, 26%);
+$violetKeyDelResetShadow: hsl(285, 91%, 52%);
+
+$violetResult: hsl(176, 100%, 44%);
+$violetResultShadow: hsl(177, 92%, 70%);
+
+/* TEXT 3 */
+$lightYellow: hsl(52, 100%, 62%);
+$darkBlue: hsl(198, 20%, 13%);

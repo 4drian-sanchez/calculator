@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+
+.slide {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3rem;
+    border-radius: 2rem;
+    background: v.$darkKeypad;
+    outline: none;
+    opacity: 0.8;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+    &:hover {
+      opacity: 1;
+    }
+
+    &.darkTheme--slide {
+      background: v.$darkKeypad;
+    }
+    
+    &.lightTheme--slide {
+      background-color: v.$lightKeypad;
+    }
+
+    &.viotelTheme--slide {
+      background-color: v.$violetScreen;
+    }
+      
+    &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background-color:  var(--colorAfter, v.$redKey);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+    
+    &::-moz-range-thumb {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow:0px 0px 11px 8px rgba(0,0,0,0.26);
+    background-color:  v.$redKey;
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+}
